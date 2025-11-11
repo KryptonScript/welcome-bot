@@ -1,0 +1,13 @@
+# YAML stands for Ain't Markup Language. It is a human-readable data serialization format. It is a way to store and organize data in a file so both humans and computer can read it easily.
+
+services:
+  - type: web
+    name: welcome-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python welcome_bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+
