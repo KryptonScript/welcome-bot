@@ -21,8 +21,7 @@ async def startwelcome(update: Update, context: ContextTypes.DEFAULT_TYPE):
     welcome_enabled = True
     await update.message.reply_text(
         "Welcome messages have been enabled!🍀 \n\n" 
-        "I'll now greet new members when they join.😊"
-        )
+        "I'll now greet new members when they join.😊")
 
 async def stopwelcome(update: Update, context: ContextTypes.DEFAULT_TYPE):
     global welcome_enabled
@@ -55,8 +54,8 @@ async def welcome(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 f"Hello {first_name} {last_name} 👋🏾 \n welcome to our awesome community which you are a part of now!  👨🏾‍💻👩🏾‍💻🚀 \n\n"
                 "We're happy to have you here! Since we are on the same team, feel free to introduce yourself, join the conversation and grow with us. 📈😊 \n\n"
                 "We believe your presence will be a blessing to the community. 🙏🏾 \n\n"
-                "@KiraFix_tech_discussion"
-        )
+                "@KiraFix_tech_discussion")
+        
         await context.bot.send_message(chat_id=chat_member.chat.id, text=welcome_message)
 
 async def goodbye(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -70,11 +69,11 @@ async def goodbye(update: Update, context: ContextTypes.DEFAULT_TYPE):
         first_name = chat_member.from_user.first_name
         last_name = chat_member.from_user.last_name or ""
         goodbye_message = (
-            f"Goodbye {first_name} {last_name} 😢 \n we're sad to see you leave our community. \n\n"
+            f"Goodbye {first_name} {last_name} 😢 \n We're sad to see you leave our community. \n\n"
             "We wish you all the best! 🙏🏾 and We are going to miss you 🥺🥺 \n\n" 
             "You're always welcome back at KiraFix💡Community! ❤️ \n\n"
-            "@KiraFix_tech_discussion"
-        )
+            "@KiraFix_tech_discussion")
+        
         await context.bot.send_message(chat_id=update.chat_member.chat.id, text=goodbye_message)
 
 async def error_handler(update, context):
@@ -95,7 +94,6 @@ def main():
     application.add_handler(CommandHandler("startbye", startbye))
     application.add_handler(CommandHandler("stopbye", stopbye))
 
-    
     application.add_handler(ChatMemberHandler(welcome, ChatMemberHandler.CHAT_MEMBER))
     application.add_handler(ChatMemberHandler(goodbye, ChatMemberHandler.CHAT_MEMBER))
 
@@ -104,8 +102,7 @@ def main():
     application.run_polling (
         allowed_updates=["chat_member"],
         drop_pending_updates=True,
-        timeout=30
-    )
+        timeout=30)
 
 if __name__ == '__main__':
     main()
