@@ -9,7 +9,7 @@ bye_enabled = False
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "Hello! I'm KiraFix💡Community's happy welcome bot. I'll greet new members when they join our communiy! \n\n"
+        "Hello! I'm KiraFix💡Community's happy welcome bot. I'll greet new members when they join our community! \n\n"
         "👋🏾❤️👨🏾‍💻 KiraFix💡Channel (https://t.me/KiraFix_tech) 🙏🏾❤️👩🏾‍💻 \n\n"
         "👋🏾❤️👨🏾‍💻 KiraFix💡Community (https://t.me/KiraFix_tech_discussion) 🙏🏾❤️👩🏾‍💻 \n\n"
         "You can use /startwelcome and /stopwelcome to control welcome messages, and /startbye and /stopbye for goodbye messages.\n"
