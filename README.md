@@ -3,7 +3,7 @@
 
 # Community address
 ## Channel 
-- **<a href = "https://t.me/KiraFix_tech">KiraFix 💡</a>**
+- **<a href = "https://t.me/KryptonScript">Krypton Script 🥷🏾👨🏾‍💻</a>**
 
 ## Community 
-- **<a href = "t.me/KiraFix_tech_discussion">KiraFix 💡 Commiunity<a>**
+- **<a href = "t.me/TeamKryptons">Team Kryptons 👨🏾‍💻👩🏾‍💻🫂<a>**

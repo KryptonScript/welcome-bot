@@ -9,9 +9,9 @@ bye_enabled = False
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "Hello! I'm KiraFix💡Community's happy welcome bot. I'll greet new members when they join our community! \n\n"
-        "👋🏾❤️👨🏾‍💻 KiraFix💡Channel (https://t.me/KiraFix_tech) 🙏🏾❤️👩🏾‍💻 \n\n"
-        "👋🏾❤️👨🏾‍💻 KiraFix💡Community (https://t.me/KiraFix_tech_discussion) 🙏🏾❤️👩🏾‍💻 \n\n"
+        "Hello! I'm Team Kryptons' happy welcome bot. I'll greet new members when they join our community! \n\n"
+        "👋🏾❤️👨🏾‍💻 Krypton Script 🥷🏾👨🏾‍💻 (https://t.me/KryptonScript) 🙏🏾❤️👩🏾‍💻 \n\n"
+        "👋🏾❤️👨🏾‍💻 Team Kryptons 👨🏾‍💻👩🏾‍💻🫂 (https://t.me/TeamKryptons) 🙏🏾❤️👩🏾‍💻 \n\n"
         "You can use /startwelcome and /stopwelcome to control welcome messages, and /startbye and /stopbye for goodbye messages.\n"
         "Proudly made with love in Ethiopia 🇪🇹❤️"
     )
@@ -54,7 +54,7 @@ async def welcome(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 f"Hello {first_name} {last_name} 👋🏾 \n welcome to our awesome community which you are a part of now!  👨🏾‍💻👩🏾‍💻🚀 \n\n"
                 "We're happy to have you here! Since we are on the same team, feel free to introduce yourself, join the conversation and grow with us. 📈😊 \n\n"
                 "We believe your presence will be a blessing to the community. 🙏🏾 \n\n"
-                "@KiraFix_tech_discussion")
+                "@TeamKryptons")
         
         await context.bot.send_message(chat_id=chat_member.chat.id, text=welcome_message)
 
@@ -71,8 +71,8 @@ async def goodbye(update: Update, context: ContextTypes.DEFAULT_TYPE):
         goodbye_message = (
             f"Goodbye {first_name} {last_name} 😢 \n We're sad to see you leave our community. \n\n"
             "We wish you all the best! 🙏🏾 and We are going to miss you 🥺🥺 \n\n" 
-            "You're always welcome back at KiraFix💡Community! ❤️ \n\n"
-            "@KiraFix_tech_discussion")
+            "You're always welcome back at Team Kryptons! ❤️ \n\n"
+            "@TeamKryptons")
         
         await context.bot.send_message(chat_id=update.chat_member.chat.id, text=goodbye_message)
 
